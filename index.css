@@ -139,3 +139,81 @@ section.intro .intro-text button {
     font-weight: 400;
     transition: background-color 0.3s ease-in-out;
 }
+
+section.different {
+    background-color: var(--very-light-gray);
+    padding: 8rem 1rem;
+}
+
+section.different h1 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+section.different h1::before {
+    content: "";
+    height: 2px;
+    width: 40%;
+    display: inherit;
+    background-color: var(--grayish-blue);
+    margin: 0 auto 1.5rem auto;
+}
+
+section.different .different-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.different-cards .different-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.different-card > img {
+    width: 5rem;
+    margin-bottom: 1.8rem;
+}
+
+.different-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.different-card p {
+    font-size: .9rem;
+    text-align: center;
+    color: var(--dark-grayish-violet);
+}
+
+section.find-out {
+    background-color: var(--dark-violet);
+    color: var(--very-light-gray);
+    padding: 4rem 1rem;
+
+    background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    max-width: 90%;
+    margin: 0 auto 5rem auto;
+}
+
+section.find-out h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+section.find-out button {
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: background-color 0.3s ease-in-out;
+}
