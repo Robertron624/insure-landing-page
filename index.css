@@ -19,9 +19,9 @@ dd {
     margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -216,4 +216,74 @@ section.find-out button {
     text-transform: uppercase;
     font-weight: 400;
     transition: background-color 0.3s ease-in-out;
+}
+
+/***********/
+/* Footer */
+/***********/
+
+/* Logo and social networks links*/
+
+footer .logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: url(/images/bg-pattern-footer-mobile.svg) no-repeat center;
+    background-size: contain;
+    padding: 8rem 0 2rem 0;
+}
+
+footer .logo-social::after {
+    content: "";
+    height: 2px;
+    width: 90%;
+    display: inherit;
+    background-color: var(--dark-grayish-violet);
+    /* margin: 4.5rem auto 0rem auto; */
+}
+
+.logo-social > img{
+    margin-bottom: 1rem;
+}
+
+.logo-social .social {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Important links section */
+
+.important-links {
+    padding: 1rem 1rem 5rem;
+}
+
+.important-links .container {
+    margin-bottom: 2rem;
+}
+
+.important-links .container:last-of-type {
+    margin-bottom: 0;
+}
+
+.important-links .container h2 {
+    color: var(--dark-grayish-violet);
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: 'Karla';
+}
+
+.important-links .container ul {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.important-links .container ul li a {
+    color: var(--very-dark-violet);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .85rem;
+    text-decoration: none;
 }
