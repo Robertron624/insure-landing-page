@@ -51,7 +51,7 @@ select {
 }
 
 button {
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -104,7 +104,6 @@ h4 {
 /***********/
 /* Header  */
 /***********/
-
 
 header {
     padding: 1.4rem 1rem;
@@ -169,7 +168,6 @@ header nav.desktop {
 /****************/
 /* Main content */
 /****************/
-
 
 section.intro {
     position: relative;
@@ -239,7 +237,7 @@ section.different h1::before {
     margin: 0 auto 1.5rem auto;
 }
 
-section.different .different-cards{
+section.different .different-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +262,7 @@ section.different .different-cards{
 }
 
 .different-card p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: center;
     color: var(--dark-grayish-violet);
 }
@@ -302,6 +300,10 @@ section.find-out button {
 /* Footer */
 /***********/
 
+footer {
+    background-color: var(--very-light-gray);
+}
+
 /* Logo and social networks links*/
 
 footer .logo-social {
@@ -320,10 +322,9 @@ footer .logo-social::after {
     width: 90%;
     display: inherit;
     background-color: var(--dark-grayish-violet);
-    /* margin: 4.5rem auto 0rem auto; */
 }
 
-.logo-social > img{
+.logo-social > img {
     margin-bottom: 1rem;
 }
 
@@ -348,33 +349,31 @@ footer .logo-social::after {
 
 .important-links .container h2 {
     color: var(--dark-grayish-violet);
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
-    font-family: 'Karla';
+    font-family: "Karla";
 }
 
 .important-links .container ul {
     display: flex;
     flex-direction: column;
-    gap: .7rem;
+    gap: 0.7rem;
 }
 
 .important-links .container ul li a {
     color: var(--very-dark-violet);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: .85rem;
+    font-size: 0.85rem;
     text-decoration: none;
 }
-
 
 /***********/
 /* Desktop */
 /***********/
 
-@media screen and (min-width:768px){
-
+@media screen and (min-width: 768px) {
     header {
         max-width: 80%;
         margin: 0 auto;
@@ -410,6 +409,10 @@ footer .logo-social::after {
         font-weight: 400;
         transition: background-color 0.3s ease-in-out;
         cursor: pointer;
+    }
+
+    main {
+        margin-bottom: 9rem;
     }
 
     section.intro .hero-container {
@@ -516,5 +519,41 @@ footer .logo-social::after {
         max-width: 26rem;
         text-align: left;
         font-size: 2.9rem;
+    }
+
+    /**********/
+    /* Footer */
+    /**********/
+
+    footer {
+        background-image: url(/images/bg-pattern-footer-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
+    footer .logo-social {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 0rem 1.5rem;
+        max-width: 80%;
+        margin: 0 auto;
+        background: none;
+        border-bottom: 2px solid hsl(0, 0%, 85%);
+    }
+
+    footer .logo-social::after {
+        content: none;
+    }
+
+    footer .important-links {
+        display: flex;
+        max-width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 3rem 0 5rem;
+    }
+
+    footer .important-links .container {
+        text-align: left;
     }
 }
