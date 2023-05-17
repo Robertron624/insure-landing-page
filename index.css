@@ -92,6 +92,8 @@ body {
     line-height: 1.5;
     font-family: "Karla", sans-serif;
     text-align: center;
+
+    --transition: all 0.3s ease-in-out;
 }
 
 h1,
@@ -293,7 +295,12 @@ section.find-out button {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
-    transition: background-color 0.3s ease-in-out;
+    transition: var(--transition);
+}
+
+section.find-out button:hover {
+    background-color: var(--very-light-gray);
+    color: var(--dark-violet);
 }
 
 /***********/
@@ -328,9 +335,20 @@ footer .logo-social::after {
     margin-bottom: 1rem;
 }
 
-.logo-social .social {
+.logo-social .social ul{
     display: flex;
+    align-items: center;
     gap: 1rem;
+}
+
+.logo-social .social svg {
+    cursor: pointer;
+    color: var(--dark-grayish-violet);
+    transition: var(--transition);
+}
+
+.logo-social .social svg:hover {
+    color: var(--very-dark-violet);
 }
 
 /* Important links section */
@@ -367,6 +385,11 @@ footer .logo-social::after {
     font-weight: 700;
     font-size: 0.85rem;
     text-decoration: none;
+    transition: var(--transition);
+}
+
+.important-links .container ul li a:hover {
+    text-decoration: underline;
 }
 
 /***********/
@@ -396,6 +419,12 @@ footer .logo-social::after {
     header nav.desktop ul li a {
         color: var(--dark-grayish-violet);
         text-decoration: none;
+        font-weight: 700;
+        transition: var(--transition);
+    }
+
+    header nav.desktop ul li a:hover {
+        color: var(--very-dark-violet);
     }
 
     header nav.desktop button {
@@ -407,8 +436,13 @@ footer .logo-social::after {
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 400;
-        transition: background-color 0.3s ease-in-out;
+        transition: var(--transition);
         cursor: pointer;
+    }
+
+    header nav.desktop button:hover {
+        background-color: var(--very-dark-violet);
+        color: var(--very-light-gray);
     }
 
     main {
@@ -445,6 +479,15 @@ footer .logo-social::after {
         font-size: 4rem;
     }
 
+    section.intro .intro-text .main-text button {
+        transition: var(--transition);
+    }
+
+    section.intro .intro-text .main-text button:hover {
+        background-color: var(--very-light-gray);
+        color: var(--dark-violet);
+    }
+
     section.intro .intro-text {
         background-image: unset;
     }
@@ -470,8 +513,6 @@ footer .logo-social::after {
 
     section.different {
         text-align: left;
-        /* max-width: 80%;
-        margin: 0 auto; */
     }
 
     section.different h1,
