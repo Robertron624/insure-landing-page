@@ -457,7 +457,9 @@ footer .logo-social::after {
 
     section.intro .shape {
         bottom: unset;
-        z-index: 999;
+        z-index: 1;
+        right: 0;
+        width: 24%;
         background-image: url(/images/bg-pattern-intro-right-desktop.svg);
         background-size: 25rem;
         height: 536px;
