@@ -52,6 +52,7 @@ select {
 
 button {
     cursor: pointer;
+    font-weight: 700;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -163,7 +164,6 @@ header nav.desktop {
     width: 90%;
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 400;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -212,7 +212,6 @@ section.intro .intro-text button {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 400;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -294,7 +293,6 @@ section.find-out button {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 400;
     transition: var(--transition);
 }
 
@@ -435,7 +433,6 @@ footer .logo-social::after {
         width: 10rem;
         font-size: 1rem;
         text-transform: uppercase;
-        font-weight: 400;
         transition: var(--transition);
         cursor: pointer;
     }
