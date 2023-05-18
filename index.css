@@ -132,6 +132,7 @@ header nav.desktop {
 .mobile-nav {
     position: absolute;
     background-color: var(--dark-violet);
+    z-index: 1;
     top: 100%;
     left: 0;
     width: 100%;
