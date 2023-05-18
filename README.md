@@ -27,10 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
+![image](https://github.com/Robertron624/insure-landing-page/assets/72587880/e541e917-3bce-48db-a8d4-f0a311d60ced)
+
+
 ### Links
 
 - Solution URL: [Github project repository](https://github.com/Robertron624/insure-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Deployed project](https://chipper-cuchufli-6ccbce.netlify.app/)
 
 ## My process
 
